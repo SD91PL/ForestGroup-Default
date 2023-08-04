@@ -756,7 +756,8 @@ nav,
 			}
 			.navbar-collapse {
 				display: block;
-				scale: 1 1; // don't touch it!
+				// scale: 1 1; // changed property scale to transform:scale(); for older browsers
+				transform: scale(1, 1); // don't touch it!
 				max-width: 80%; // space left for a few more links
 				.navbar-nav {
 					flex-direction: row;
